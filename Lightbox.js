@@ -55,6 +55,7 @@ export default class Lightbox extends Component {
   }
 
   getOverlayProps = () => ({
+    ref: this.props.overlayRef,
     isOpen: this.state.isOpen,
     origin: this.state.origin,
     renderHeader: this.props.renderHeader,
